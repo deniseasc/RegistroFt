@@ -1,2 +1,7 @@
 /**/
-
+h3{
+  text-align: center;
+}
+#btn{
+  background-image: linear-gradient(to right, #E6E6FA, #FFF0F5 120%);
+}

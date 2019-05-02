@@ -5,20 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
-  <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <script src="components/js/jquery-3.3.1.min.js"></script>
+  <script src="components/js/bootstrap.js"></script>
+  <script src="components/comandos.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <script>
-    ons.ready(function() {
-      console.log("Onsen UI is ready!");
-    });
-  </script>
+  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+
 </head>
 <body>
-  This is a template for Onsen UI app.
+      <div class="container">
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h3> Localização da foto </h3>      
+            </div>
+          </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <button type="button" class="btn btn-block" id="btn" onclick="acao()"> Câmera </button>
+          </div>
+          </div>
+        </div>
+
+            <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <img src="" id="imagem" onclick="acao()">
+          </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label>Latitude:</label>
+              <input type="text" class="form-control" id="lat" readonly onclick="acao()">
+          </div>
+          </div>
+          </div>
+
+          <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label>Longitude:</label>
+              <input type="text" class="form-control" id="long" readonly onclick="acao()">
+          </div>
+          </div>
+          </div>
+
+         <div id="map" style="width: 100%; height: 530px;" onclick="acao()"></div>
+      </div>
 </body>
 </html>
