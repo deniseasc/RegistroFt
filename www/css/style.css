@@ -1,7 +1,22 @@
 /**/
+
+body{
+  background: linear-gradient(to right, rgb(155, 155, 219), #FFF0F5 120%);
+}
 h3{
   text-align: center;
 }
 #btn{
-  background-image: linear-gradient(to right, #E6E6FA, #FFF0F5 120%);
+  background-color:  #FFF0F5;
+}
+
+#lat{
+  background-color: white;
+  border: white;
+}
+#long{
+  background-color: white;
+}
+#imagem{
+  border-radius: 5px;
 }
